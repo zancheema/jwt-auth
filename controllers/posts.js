@@ -1,3 +1,5 @@
+const { getJsonWebTokens } = require("../utils/authUtil");
+
 module.exports = {
     getPosts: async (req, res) => {
         const { pool } = req;
@@ -8,7 +10,7 @@ module.exports = {
                 userId: r.user_id,
                 text: r.text
             }));
-            res.json(posts);
+            res.json({ accessToken: req.accessToken, data: posts });
         } catch (err) {
             res.sendStatus(401);
         }

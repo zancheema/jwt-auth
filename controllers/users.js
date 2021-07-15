@@ -1,6 +1,5 @@
-require("dotenv").config();
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+const { getJsonWebTokens } = require("../utils/authUtil");
 
 module.exports = {
     register: async (req, res) => {
@@ -35,8 +34,8 @@ module.exports = {
                 throw { message: "User does not exist" };
             }
 
-            const accessToken = jwt.sign({ id: user.id }, process.env.ACCESS_SECRET);
-            res.json({ accessToken });
+            const tokens = await getJsonWebTokens(user.id);
+            res.json({ tokens });
         } catch (err) {
             res.sendStatus(401);
         }

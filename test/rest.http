@@ -20,5 +20,5 @@ Content-Type: application/json
 ###
 
 GET http://localhost:4000/api/posts
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE2MjYzNjAyMDB9.XlWN1zfKVs0-VAMwJLCy-90bHkbbOenzGpZt86uJlwA
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE2MjYzNjI5NTksImV4cCI6MTYyNjM2Mjk3NH0.MhBVTrlsvLZ3WJE5K7Z8hA6I9JMBwwa3OUNiKy9zZBQ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE2MjYzNjI5NTl9.6FbRZkBnytt8L606BznAwfLsp3ZluqLdpkv_ByCP2B0
 
