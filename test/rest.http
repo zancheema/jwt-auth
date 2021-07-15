@@ -1,0 +1,24 @@
+POST http://localhost:4000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "john",
+    "email": "jphn@localhost.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:4000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "jphn@localhost.com",
+    "password": "123456"
+}
+
+###
+
+GET http://localhost:4000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjMiLCJpYXQiOjE2MjYzNjAyMDB9.XlWN1zfKVs0-VAMwJLCy-90bHkbbOenzGpZt86uJlwA
+
